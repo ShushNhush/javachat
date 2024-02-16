@@ -24,7 +24,7 @@ public class MessageReceiver implements Runnable
             String inputLine;
             while ((inputLine = inputStream.readLine()) != null)
             {
-                System.out.println("From server message queue: " + inputLine);
+                System.out.println("From server message queue: "+ clientSocket.getInetAddress() + " " + inputLine);
                 if ("exit".equals(inputLine))
                 {
                     System.out.println("Client sent 'exit' - closing connection.");

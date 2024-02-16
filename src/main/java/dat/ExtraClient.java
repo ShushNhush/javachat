@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 public class ExtraClient
 {
 
-    private static final String IP = "10.83.130.2";
+    private static final String IP = "192.168.7.191";
     public static void main(String[] args)
     {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
